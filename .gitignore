@@ -1,0 +1,12 @@
+*.pyc
+__pycache__/
+
+coverage/
+.coverage
+
+.venv/
+.venv3/
+
+dist/
+MANIFEST
+*.egg-info/
