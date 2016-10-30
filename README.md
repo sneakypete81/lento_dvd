@@ -5,7 +5,7 @@ Works with Ubuntu Unity and Gnome.
 
 Uses the `eject` tool to set the speed limit.
 
-![alt tag](https://raw.githubusercontent.com/sneakypete81/lento_dvd/gh-pages/img/lento_dvd_screenshot.png)
+![alt tag](https://raw.githubusercontent.com/sneakypete81/lento_dvd/gh-pages/img/lento_dvd_screenshot.gif)
 
 # Usage
 
