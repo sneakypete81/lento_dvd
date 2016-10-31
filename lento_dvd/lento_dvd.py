@@ -57,7 +57,6 @@ class LentoDvd(object):
 
     def _build_menu(self):
         menu = gtk.Menu()
-        submenu = gtk.Menu()
 
         title_item = gtk.MenuItem("Limit DVD Speed")
         title_item.set_sensitive(False)
