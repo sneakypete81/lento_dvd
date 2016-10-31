@@ -11,19 +11,19 @@ clean:
 	rm -f ~/.lento_dvd
 
 venv2:
-	rm -rf ./.venv/
-	virtualenv --python=python2.7 --system-site-packages .venv
-	.venv/bin/pip install nose==1.3.3 coverage==3.7.1 mock==1.0.1
+	rm -rf ./.venv2/
+	virtualenv --python=python2.7 --system-site-packages .venv2
+	.venv2/bin/pip install nose==1.3.3 coverage==3.7.1 mock==2.0.0 pyhamcrest==1.8.0
 
 venv3:
 	rm -rf ./.venv3/
 	virtualenv --python=python3 --system-site-packages .venv3
-	.venv3/bin/pip install nose==1.3.3 coverage==3.7.1 mock==1.0.1
+	.venv3/bin/pip install nose==1.3.3 coverage==3.7.1 mock==2.0.0 pyhamcrest==1.8.0
 
 venv: venv2 venv3
 
 test2:
-	.venv/bin/nosetests
+	.venv2/bin/nosetests
 
 test3:
 	.venv3/bin/nosetests
