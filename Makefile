@@ -31,7 +31,7 @@ test3:
 test: test2 test3
 
 cover:
-	export .venv3/bin/nosetests --with-coverage --cover-branches --cover-package=lento_dvd --cover-html --cover-html-dir=coverage
+	.venv3/bin/nosetests --with-coverage --cover-branches --cover-package=lento_dvd --cover-html --cover-html-dir=coverage
 
 run:
 	bin/lento_dvd
