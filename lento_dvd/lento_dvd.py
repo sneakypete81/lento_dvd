@@ -114,7 +114,7 @@ class LentoDvd(object):
             print(error)
             return False
 
-        # Keep overriding the speed every second, in case a new DVD gets inserted
+        # Keep overriding the speed every 5 seconds, in case a new DVD gets inserted
         if speed != NO_LIMIT:
             self.timer = glib.timeout_add_seconds(OVERRIDE_INTERVAL,
                                                   self.change_speed, speed)
@@ -133,6 +133,8 @@ class LentoDvd(object):
 
     # UI listeners
     def on_change_speed(self, item, speed):
+        # An 'activate' event is triggered when a menu item is deselected.
+        # This event must be ignored.
         if item.get_active():
             self.change_speed(speed)
 
