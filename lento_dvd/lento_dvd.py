@@ -31,6 +31,7 @@ from gi.repository import AppIndicator3 as appindicator
 from gi.repository import GLib as glib
 
 from . import resource
+from . import eject
 
 APPINDICATOR_ID = 'lento_dvd_appindicator'
 NO_LIMIT = 0
@@ -109,7 +110,7 @@ class LentoDvd(object):
             self.timer = None
 
         try:
-            subprocess.check_call(["eject", "--cdspeed", str(speed)])
+            eject.eject(cdspeed=speed)
         except subprocess.CalledProcessError as error:
             print(error)
             return False
