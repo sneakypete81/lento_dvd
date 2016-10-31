@@ -54,3 +54,6 @@ install: sdist2
 
 uninstall:
 	pip uninstall lento_dvd
+
+publish: sdist
+	twine upload dist/*

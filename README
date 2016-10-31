@@ -7,9 +7,9 @@ Works with Ubuntu Unity and Gnome.
 Uses the ``eject`` tool to set the speed limit.
 
 .. figure:: https://raw.githubusercontent.com/sneakypete81/lento_dvd/gh-pages/img/lento_dvd_screenshot.gif
-   :alt: alt tag
+   :alt: Screenshot
 
-   alt tag
+   Screenshot
 
 Usage
 =====
@@ -19,7 +19,7 @@ Usage
 ::
 
     $ sudo apt-get install eject
-    $ sudo pip install git+https://github.com/sneakypete81/lento_dvd.git
+    $ sudo pip install lento_dvd
 
 **Run**
 
@@ -88,11 +88,17 @@ Running and testing
 
     $ make clean
 
-**Generating README.rst**
+**Generating README from README.md**
 
 ::
 
     $ make doc
+
+**Publishing to PYPI**
+
+::
+
+    $ make publish
 
 **Reminder - release process**
 
@@ -101,6 +107,7 @@ Running and testing
    versioning <http://semver.org/>`__
 3. Tag new version; tag format is 'vX.Y.Z'; e.g.: v1.2.1
 4. Push changes and a new tag
+5. Publish to PYPI
 
 Copying
 =======

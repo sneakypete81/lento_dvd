@@ -5,14 +5,14 @@ Works with Ubuntu Unity and Gnome.
 
 Uses the `eject` tool to set the speed limit.
 
-![alt tag](https://raw.githubusercontent.com/sneakypete81/lento_dvd/gh-pages/img/lento_dvd_screenshot.gif)
+![Screenshot](https://raw.githubusercontent.com/sneakypete81/lento_dvd/gh-pages/img/lento_dvd_screenshot.gif)
 
 # Usage
 
 **Install**:
 
     $ sudo apt-get install eject
-    $ sudo pip install git+https://github.com/sneakypete81/lento_dvd.git
+    $ sudo pip install lento_dvd
 
 **Run**
 
@@ -64,9 +64,13 @@ tests are executed on "both pythons".
 
     $ make clean
 
-**Generating README.rst**
+**Generating README from README.md**
 
     $ make doc
+
+**Publishing to PYPI**
+
+    $ make publish
 
 **Reminder - release process**
 
@@ -74,6 +78,7 @@ tests are executed on "both pythons".
 2. Update setup.py and change the version according to [semantic versioning](http://semver.org/)
 3. Tag new version; tag format is 'vX.Y.Z'; e.g.: v1.2.1
 4. Push changes and a new tag
+5. Publish to PYPI
 
 # Copying
 
