@@ -18,7 +18,7 @@ Usage
 
 ::
 
-    $ sudo apt-get install eject
+    $ sudo apt-get install eject gir1.2-appindicator3
     $ sudo pip install lento_dvd
 
 **Run**

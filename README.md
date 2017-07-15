@@ -11,7 +11,7 @@ Uses the `eject` tool to set the speed limit.
 
 **Install**:
 
-    $ sudo apt-get install eject
+    $ sudo apt-get install eject gir1.2-appindicator3
     $ sudo pip install lento_dvd
 
 **Run**
